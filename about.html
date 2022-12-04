@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/db839bb3c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Me1.jpg" class="logo" width="300" lenght="300">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="galleries.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        
+            <h1>All <span>About </span>Me</h1>
+    </div>
+</div>
+</div>
+    <!-- -----------about--------- -->
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="photo_6332313650680934961_y.jpg" width="100" height="500">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Current undergraduate in information management with dozens of classroom hours in information literacy and management related courses.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Technical skills</span><br>Designing Web<br>Software Skills<br>Basic Computer Knowledge</li>
+                <li><span>Interpersonal skills</span><br>Communication<br>Empathy</li>
+                <li><span>Problem-solving skills</span><br>Critical Thinking<br>Analytical Skills</li>
+            </ul>
+            </div>
+         <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>Achievements</span><br><span>2016-2019</span><br>Watikah Pelantikan<br><br><span>2017</span><br>NILAM Award (Bronze)<br>8A in ‘Pentaksiran Tingkatan 3’<br><br><span>2018</span><br>‘Jayyid Jiddan’ in ‘Sijil Menengah Agama'<br><br><span>2019</span><br>Committee members of pentaquin club</li>
+                <li><span>Program Joined</span><br><span>2016</span><br>‘Smart Insan’ program<br><br><span>2018</span><br>Halal Awareness Seminar<br>Consolidation Course for peer mentors and resource center supervisors<br>Cultivation of high-level thinking skills program<br>Programme For International Student Assessment (PISA)<br><br><span>2022</span><br>Annual Grand Meeting<br>Career Talk Sarawak Information System</li>
+            </ul>
+        </div>
+             
+            </div>
+        </div>
+    </div>
+</div>
+    
+<!-- ---------------Hobbies-------------- -->
+<div id="Hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+        <div class="Hobbies-list">
+            <div>
+               <i class="fa-solid fa-book"></i>
+                <h2>Literature</h2>
+                <p>Reading fiction and non-fiction books with thriller and mystery genre.</p>
+                <a href="https://www.goodreads.com/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music</h2>
+                <p>Listening a different state song especially Japanese.</p>
+                <a href="https://www.youtube.com/feed/library">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Games</h2>
+                <p>Video games and Mobile games.</p>
+                <a href="https://genshin.hoyoverse.com/en/home">Learn more</a>
+            </div>
+        </div>
+    </div> 
+</div>
+    
+    
+    
+    <script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+    
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+    
+    </body>
+</html>

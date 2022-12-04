@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="https://kit.fontawesome.com/db839bb3c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Me1.jpg" class="logo" width="300" lenght="300">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="galleries.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        <p>Information <br>Management Student</p>
+            <h1>Hi, I'm <span>Izzah</span><br>Sofia from IM1105D</h1>
+    </div>
+</div>
+</div>
+<!-- -----------about--------- -->
+<div id="about">
+    <div class="conatiner">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="photo_6332313650680934961_y.jpg" width="100" height="500">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Current undergraduate in information management with dozens of classroom hours in information literacy and management related courses.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>Technical skills</span><br>Designing Web<br>Software Skills<br>Basic Computer Knowledge</li>
+                <li><span>Interpersonal skills</span><br>Communication<br>Empathy</li>
+                <li><span>Problem-solving skills</span><br>Critical Thinking<br>Analytical Skills</li>
+            </ul>
+            </div>
+         <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>Achievements</span><br><span>2016-2019</span><br>Watikah Pelantikan<br><br><span>2017</span><br>NILAM Award (Bronze)<br>8A in ‘Pentaksiran Tingkatan 3’<br><br><span>2018</span><br>‘Jayyid Jiddan’ in ‘Sijil Menengah Agama'<br><br><span>2019</span><br>Committee members of pentaquin club</li>
+                <li><span>Program Joined</span><br><span>2016</span><br>‘Smart Insan’ program<br><br><span>2018</span><br>Halal Awareness Seminar<br>Consolidation Course for peer mentors and resource center supervisors<br>Cultivation of high-level thinking skills program<br>Programme For International Student Assessment (PISA)<br><br><span>2022</span><br>Annual Grand Meeting<br>Career Talk Sarawak Information System</li>
+            </ul>
+        </div>
+             
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------Education-------------- -->
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="subject-list">
+            <div class="subject">
+                <img src="logo_sks.jpg">
+                    <div class="layer">
+                        <h3>Primary School</h3>
+                        <p>Sekolah Kebangsaan Sijangkang</p>
+                        <a href="https://sksijangkang.weebly.com/profil-sekolah.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+                    <div class="subject">
+                        <img src="samttar.jpg">
+                            <div class="layer">
+                                <h3>Secondary School</h3>
+                                <p>Sekolah Agama Menengah Tinggi Tengku Ampuan Rahimah</p>
+                                <a href="http://sabksamttar.blogspot.com/p/pusat-sumber.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                            <div class="subject">
+                                <img src="UITM-logo.png">
+                                <div class="layer">
+                                    <h3>University</h3>
+                                    <p>UiTM Samarahan Branch</p>
+                                    <a href="https://sarawak.uitm.edu.my/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    
+<!-- ---------------Hobbies-------------- -->
+<div id="Hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+        <div class="Hobbies-list">
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Literature</h2>
+                <p>Reading fiction and non-fiction books with thriller and mystery genre.</p>
+                <a href="https://www.goodreads.com/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music</h2>
+                <p>Listening a different state song especially Japanese.</p>
+                <a href="https://www.youtube.com/feed/library">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Games</h2>
+                <p>Video games and Mobile games.</p>
+                <a href="https://genshin.hoyoverse.com/en/home">Learn more</a>
+            </div>
+        </div>
+    </div> 
+</div>
+    
+<!-- -----------------galleries----------------- -->
+    <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+            <h1 class="sub-title">Gallery</h1>
+            <br>
+            <div class="numbertext">1 / 3</div>
+            <img src="kelas%201.jpg" style="width:100%">
+            <div class="text">End of Semester 4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="Raya%201.jpg" style="width:100%">
+    <div class="text">Eid Fitri</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Raya%203.jpg" style="width:100%">
+    <div class="text">Eid Fitri</div>
+  </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="End of Semester 4"></span>
+        <span class="dot" onclick="Eid Fitri"></span>
+        <span class="dot" onclick="Eid Fitri"></span>
+</div>
+    
+<!-- -----------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sofiayusri04@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 011-69286254</p>
+                <div class="social-icons">
+                     <a href="https://www.instagram.com/izzfia_/"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="https://twitter.com/4Shinra"><i class="fa-brands fa-twitter"></i></a>
+                     <a href="https://discord.com/channels/@me"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                
+                    <a href="My%20Cv.pdf" download class="btn btn2">Download Cv</a>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+    
+ 
+    
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+    
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+    
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxCC9IpjLg1K12nPWXgxrNibLepRSG48irE3lCE8_mjRQmFPjGjUxMXyhkHyuB5H1wD/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg") 
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    }) 
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+    <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    

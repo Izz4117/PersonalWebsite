@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="education.css">
+    <script src="https://kit.fontawesome.com/db839bb3c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Me1.jpg" class="logo" width="300" lenght="300">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="galleries.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+        
+            <h1>Journey Through <span>Horizons </span></h1>
+    </div>
+</div>
+</div>
+    
+<!-- -----------------education----------------- -->
+    <div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="subject-list">
+            <div class="subject">
+                <img src="logo_sks.jpg">
+                    <div class="layer">
+                        <h3>Primary School</h3>
+                        <p>Sekolah Kebangsaan Sijangkang</p>
+                        <a href="https://sksijangkang.weebly.com/profil-sekolah.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+            </div>
+                    <div class="subject">
+                        <img src="samttar.jpg">
+                            <div class="layer">
+                                <h3>Secondary School</h3>
+                                <p>Sekolah Agama Menengah Tinggi Tengku Ampuan Rahimah</p>
+                                <a href="http://sabksamttar.blogspot.com/p/pusat-sumber.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                            <div class="subject">
+                                <img src="UITM-logo.png">
+                                <div class="layer">
+                                    <h3>University</h3>
+                                    <p>UiTM Samarahan Branch</p>
+                                    <a href="https://sarawak.uitm.edu.my/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+    <script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+</body>
+</html>
